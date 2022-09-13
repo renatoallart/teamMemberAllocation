@@ -1,0 +1,7 @@
+body{
+    font-family: Arial;
+}
+.card-collation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
