@@ -6,7 +6,7 @@ export function Header(props) {
         <div className='row justify-content-center mt-3 mb-4'>
           <div className='col-8'>
             <h1 >Team Member Allocation</h1>
-            <h3>{props.selectedTeam} has {props.teamMemberCount} Members</h3>
+            <h3>{props.selectedTeam} has {props.teamMemberCount} {props.teamMemberCount === 1 ? 'Member': 'Members'}</h3>
           </div>
         </div>
     </header>

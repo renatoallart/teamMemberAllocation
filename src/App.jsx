@@ -25,7 +25,9 @@ export function App() {
 
   function handleTeamSelectionChange(event) {
     const { value } = event.target
+    console.log(value);
     setSelectedTeam(value)
+    
   }
 
   function selectTeamToEmployee(employeeId) {
@@ -50,10 +52,10 @@ export function App() {
             selectedTeam={selectedTeam}
             selectTeamToEmployee={selectTeamToEmployee}
             handleTeamSelectionChange={handleTeamSelectionChange} />} />
-          <Route path='/GroupTeamMembers' element={
+          <Route path='/GroupedTeamMembers' element={
             <GroupTeamMembers employees={employees}
               selectedTeam={selectedTeam}
-              setSelectedTeam={selectedTeam} />} />
+              setSelectedTeam={setSelectedTeam}/>} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 
